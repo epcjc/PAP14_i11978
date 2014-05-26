@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFD8942C-4055-4C92-B933-F4C45F99CDB8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Projeto.My.MyApplication</StartupObject>
+    <RootNamespace>Projeto</RootNamespace>
+    <AssemblyName>Projeto</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Projeto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Projeto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestao_cat_galeria.Designer.vb">
+      <DependentUpon>gestao_cat_galeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gestao_cat_galeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestao_galeria.Designer.vb">
+      <DependentUpon>gestao_galeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gestao_galeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestao_utilizadores.Designer.vb">
+      <DependentUpon>gestao_utilizadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gestao_utilizadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i11978DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>i11978DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inserir_cat_galaria.Designer.vb">
+      <DependentUpon>inserir_cat_galaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserir_cat_galaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserir_galeria.Designer.vb">
+      <DependentUpon>inserir_galeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserir_galeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserir_imagens_noticias.Designer.vb">
+      <DependentUpon>inserir_imagens_noticias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserir_imagens_noticias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserir_noticia.Designer.vb">
+      <DependentUpon>inserir_noticia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserir_noticia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserir_paginas.Designer.vb">
+      <DependentUpon>inserir_paginas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserir_paginas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserir_utilizadores.Designer.vb">
+      <DependentUpon>inserir_utilizadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inserir_utilizadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ver_imagens_noticias.Designer.vb">
+      <DependentUpon>ver_imagens_noticias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ver_imagens_noticias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ver_menu.Designer.vb">
+      <DependentUpon>ver_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ver_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ver_noticia.Designer.vb">
+      <DependentUpon>ver_noticia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ver_noticia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ver_paginas.Designer.vb">
+      <DependentUpon>ver_paginas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ver_paginas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestao_cat_galeria.resx">
+      <DependentUpon>gestao_cat_galeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestao_galeria.resx">
+      <DependentUpon>gestao_galeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestao_utilizadores.resx">
+      <DependentUpon>gestao_utilizadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserir_cat_galaria.resx">
+      <DependentUpon>inserir_cat_galaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserir_galeria.resx">
+      <DependentUpon>inserir_galeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserir_imagens_noticias.resx">
+      <DependentUpon>inserir_imagens_noticias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserir_noticia.resx">
+      <DependentUpon>inserir_noticia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserir_paginas.resx">
+      <DependentUpon>inserir_paginas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserir_utilizadores.resx">
+      <DependentUpon>inserir_utilizadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ver_imagens_noticias.resx">
+      <DependentUpon>ver_imagens_noticias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ver_menu.resx">
+      <DependentUpon>ver_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ver_noticia.resx">
+      <DependentUpon>ver_noticia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ver_paginas.resx">
+      <DependentUpon>ver_paginas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\tiago bessa ante projecto.docx" />
+    <None Include="i11978DataSet.xsc">
+      <DependentUpon>i11978DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="i11978DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>i11978DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="i11978DataSet.xss">
+      <DependentUpon>i11978DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
